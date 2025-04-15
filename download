@@ -1,0 +1,2 @@
+#! /bin/bash
+exercism download --track=rust --exercise=$1

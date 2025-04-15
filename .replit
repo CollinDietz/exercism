@@ -1,10 +1,30 @@
 hidden = ["target", ".cargo"]
 
 entrypoint = "src/main.rs"
-modules = ["rust-stable"]
+modules = ["rust-nightly"]
 
 [nix]
 channel = "stable-24_05"
 
 [gitHubImport]
 requiredFiles = [".replit"]
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Configure"
+mode = "sequential"
+author = 703768
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "exercism configure --token=41578643-e869-453b-ad76-66583e9697dd"
+
+[[workflows.workflow]]
+name = "Download Exercise"
+mode = "sequential"
+author = 703768
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "exercism download --force --track=rust --exercise=hello-world"
