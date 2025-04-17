@@ -10,6 +10,7 @@ channel = "stable-24_05"
 requiredFiles = [".replit"]
 
 [workflows]
+runButton = "Run Tests"
 
 [[workflows.workflow]]
 name = "Configure"
@@ -28,3 +29,12 @@ author = 703768
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "exercism download --force --track=rust --exercise=hello-world"
+
+[[workflows.workflow]]
+name = "Run Tests"
+author = 703768
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cargo test"
