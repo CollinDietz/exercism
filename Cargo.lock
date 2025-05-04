@@ -20,11 +20,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "difference_of_squares"
+version = "0.1.0"
+
+[[package]]
 name = "gigasecond"
 version = "0.1.0"
 dependencies = [
  "time",
 ]
+
+[[package]]
+name = "grains"
+version = "0.1.0"
 
 [[package]]
 name = "hello_world"
