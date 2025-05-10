@@ -7,6 +7,10 @@ name = "armstrong_numbers"
 version = "0.1.0"
 
 [[package]]
+name = "bob"
+version = "0.1.0"
+
+[[package]]
 name = "bottle_song"
 version = "0.1.0"
 
@@ -28,6 +32,10 @@ name = "difference_of_squares"
 version = "0.1.0"
 
 [[package]]
+name = "eliuds_eggs"
+version = "0.1.0"
+
+[[package]]
 name = "gigasecond"
 version = "0.1.0"
 dependencies = [
@@ -40,6 +48,14 @@ version = "0.1.0"
 
 [[package]]
 name = "hello_world"
+version = "0.1.0"
+
+[[package]]
+name = "high_scores"
+version = "0.1.0"
+
+[[package]]
+name = "kindergarten_garden"
 version = "0.1.0"
 
 [[package]]
@@ -107,6 +123,10 @@ dependencies = [
  "quote",
  "syn",
 ]
+
+[[package]]
+name = "series"
+version = "0.1.0"
 
 [[package]]
 name = "sum_of_multiples"
